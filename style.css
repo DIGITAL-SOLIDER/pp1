@@ -33,12 +33,6 @@ body
     background-color: #ff64ff;
 }
 
-.item:hover
-{
-    opacity:1;
-    transform: scale(0.7,0.7);
-}
-
 a:link
 {
     color: salmon;
@@ -47,4 +41,30 @@ a:link
 a:visited
 {
     color: seagreen;
+}
+
+.item
+{
+    position: relative;
+}
+
+.item p
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: lightcoral;
+    opacity:0;
+}
+
+.item:hover p
+{
+    opacity:1;
+}
+
+.item:hover img
+{
+    opacity:0.33;
+    transform: scale(0.7,0.7);
 }
