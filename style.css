@@ -14,20 +14,37 @@
     width: 310px;
     font-family: fantasy;
     border: solid green;
+    margin-top:10px;
 }
 
 .menu
 {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: #F4F9;
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 400;
-    color: white;
+    color: #00CCCC;
 }
 
 body
 {
-    background-color: whitesmoke;
+    background-color: #ff64ff;
+}
+
+.item:hover
+{
+    opacity:1;
+    transform: scale(0.7,0.7);
+}
+
+a:link
+{
+    color: salmon;
+}
+
+a:visited
+{
+    color: seagreen;
 }
